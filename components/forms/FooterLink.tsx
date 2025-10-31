@@ -1,11 +1,6 @@
 import Link from "next/link";
 import React from "react";
 
-interface FooterLinkProps {
-  text: string;
-  href: string;
-  linkText: string;
-}
 
 const FooterLink = ({ text, href, linkText }: FooterLinkProps) => {
   return (

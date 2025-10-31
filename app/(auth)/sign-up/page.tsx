@@ -37,7 +37,7 @@ const SignUp = () => {
 
   return (
     <>
-     <h1 className = "form-title">Sig Up & personalise</h1>
+     <h1 className = "form-title">Sign Up & personalise</h1>
      <form onSubmit={handleSubmit (onSubmit)} className= "space-y-5">
 
             <InputField 
@@ -46,7 +46,9 @@ const SignUp = () => {
             placeholder = "Prakhar"
             register = {register}
             error = {errors.fullName}
-            validation = {{required:'full name is required',minLength:2}}
+            validation = {{required:'full name is required',
+                          minLength:{value:2, message:'full name must be atleast 2 characters'}
+            }}
             />
 
             <InputField 
